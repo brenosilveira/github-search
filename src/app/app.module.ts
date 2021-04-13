@@ -10,7 +10,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { LogoComponent } from './components/logo/logo.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SearchService } from './search.service';
+import { SearchService } from './services/user/search.service';
+import { RepositoriesComponent } from './components/repositories/repositories.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SearchService } from './search.service';
     SearchBarComponent,
     LogoComponent,
     NotFoundComponent,
+    RepositoriesComponent,
   ],
   imports: [
     BrowserModule,

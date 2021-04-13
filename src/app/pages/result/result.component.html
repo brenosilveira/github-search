@@ -4,5 +4,8 @@
     <app-search-bar></app-search-bar>
   </header>
 
-  <app-profile></app-profile>
+  <section>
+    <app-profile [state]="state"></app-profile>
+    <app-repositories [state]="state"></app-repositories>
+  </section>
 </div>

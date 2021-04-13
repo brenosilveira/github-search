@@ -1,28 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { SearchService } from 'src/app/search.service';
-import { User } from '../../shared/user.model'
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.scss'],
-  providers: [ SearchService ]
+  styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
 
-  public user: any
+  @Input() public state: any
 
-  constructor(private searchService: SearchService) { }
+  constructor() { }
 
-  ngOnInit(): void {
-    this.searchService.getUser()
-      .then(( user: any ) => {
-        this.user = user
-        console.log(user)
-      })
-      .catch(( error: any) => {
-        console.log(error)
-      })
-  }
-
+  ngOnInit(): void { }
 }

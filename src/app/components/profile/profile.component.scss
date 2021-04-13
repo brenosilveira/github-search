@@ -1,101 +1,55 @@
-article {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-column-gap: 40px;
+.info {
 
-  @media screen and (max-width: 768px) {
-    display: block;
-    text-align: center;
+  .image-profile {
+
+    img {
+      width: 280px;
+      height: 280px;
+    }
   }
 
-  .info {
+  .title-profile {
+    margin-top: 12px;
+    margin-bottom: 33px;
 
-
-    .image-profile {
-
-      img {
-        width: 280px;
-        height: 280px;
-      }
+    h2 {
+      margin: 0;
+      font-size: 2.18rem;
+      font-weight: 300;
     }
 
-    .title-profile {
-      margin-top: 12px;
-      margin-bottom: 33px;
+    p {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #5c5c5c;
+    }
+  }
 
-      h2 {
-        margin: 0;
-        font-size: 2.18rem;
-        font-weight: 300;
+  .icons-profile {
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    .box-ico {
+      display: flex;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
       }
 
       p {
         margin: 0;
-        font-size: 1.25rem;
-        font-weight: 300;
         color: #5c5c5c;
       }
     }
-
-    .icons-profile {
-
-      @media screen and (max-width: 768px) {
-        margin-bottom: 50px;
-      }
-
-      .box-ico {
-        display: flex;
-        margin-bottom: 15px;
-
-        @media screen and (max-width: 768px) {
-          justify-content: center;
-        }
-
-        img {
-          width: 24px;
-          height: 24px;
-          margin-right: 7px;
-        }
-
-        p {
-          margin: 0;
-          color: #5c5c5c;
-        }
-      }
-    }
   }
-
-  .repo {
-
-    .repo-content {
-      margin-bottom: 30px;
-
-      .repo-title {
-        margin: 0;
-        font-size: 2.18rem;
-        font-weight: 300;
-        color: #ac53f2;
-      }
-
-      .repo-subtitle {
-        margin: 0;
-        font-size: 1.25rem;
-        font-weight: 300;
-      }
-
-      .ico-star-repo {
-        display: flex;
-
-        @media screen and (max-width: 768px) {
-          justify-content: center;
-        }
-
-        p {
-          margin-left: 7px;
-        }
-      }
-    }
-  }
-
 }
-
