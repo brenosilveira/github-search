@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { LogoComponent } from 'src/app/components/logo/logo.component';
 import { HomeComponent } from './home.component';
 
 describe('HomeComponent', () => {
@@ -21,5 +21,13 @@ describe('HomeComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render Logo', () => {
+    const fixture = TestBed.createComponent(LogoComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('Github ');
+    expect(compiled.querySelector('h1 > span').textContent).toContain('Search');
   });
 });

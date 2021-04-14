@@ -22,4 +22,11 @@ describe('NotFoundComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render NotFound', () => {
+    const fixture = TestBed.createComponent(NotFoundComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('User not found :(');
+  });
 });

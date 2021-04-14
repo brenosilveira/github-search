@@ -14,18 +14,19 @@ export class SearchBarComponent implements OnInit {
 
   constructor(private searchService: SearchService, private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   async search(termSearch: string): Promise<any> {
-    if (termSearch === '') {
-      alert('Preencha o input')
-    }
     try {
-      let result = await this.searchService.searchUser(termSearch)
-      return this.router.navigate(['/result'], { state: result, replaceUrl: true })
-    } catch {
-      return this.router.navigate(['/not-found'])
+      const result = await this.searchService.searchUser(termSearch)
+      if(this.router.url === '/result'){
+        return this.router.navigate(['/result'], { state: result });
+
+      }
+
+      return this.router.navigate(['/result'], { state: result });
+    } catch (error) {
+      return this.router.navigate(['/not-found']);
     }
   }
 }

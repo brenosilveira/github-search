@@ -12,6 +12,9 @@ export class ResultComponent implements OnInit {
 
   constructor(private router: Router) {
     this.state = this.router.getCurrentNavigation()?.extras.state
+    if(!this.state) {
+      this.router.navigateByUrl('/');
+    }
   }
 
   ngOnInit(): void { }
