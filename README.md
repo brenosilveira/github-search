@@ -1,27 +1,23 @@
-# GithubSearch
+# 🔎 Github Search :octocat:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+![image](https://user-images.githubusercontent.com/47336657/114782666-352cb900-9d50-11eb-9e82-afaf3d90b89d.png)
 
-## Development server
+
+
+## :page_with_curl: O Projeto
+Esta aplicação foi criada com intuito de realizar uma busca por um perfil desejado existente na plataforma Github.
+Ao pesquisar pelo nome do perfil no campo de busca, será redirecionado para uma pagina onde é exibido alguma informações do usuário referente a busca e seus repositórios. Clicando sobre qualquer repositório exibido, o mesmo será aberto diretamente do Github em uma outra aba.
+
+## :computer: Tecnologias
+A aplicação foi desenvolvida com: 
+- Angular | [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
+- HTML5
+- Sass
+- TypeScript
+
+## :grinning: Quer contribuir?
+Será uma honra! Fique a vontade para fazer um fork com suas modificações e mandar sua solicitação. Vou curtir demais esse compartilhamento de conhecimento :v:
+
+## :satellite: Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
