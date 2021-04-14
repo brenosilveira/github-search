@@ -6,10 +6,11 @@ import { User } from '../../shared/user.model';
 @Injectable()
 export class SearchService {
 
-  constructor (private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   public searchUser(userName: string): Promise<User> {
     return this.http.get<User>(`${environment.url_api}/users/${userName}`)
+
       .toPromise()
       .then((res) => res)
       .catch((err) => {

@@ -19,11 +19,9 @@ export class SearchBarComponent implements OnInit {
   async search(termSearch: string): Promise<any> {
     try {
       const result = await this.searchService.searchUser(termSearch)
-      if(this.router.url === '/result'){
+      if (this.router.url === '/result') {
         return this.router.navigate(['/result'], { state: result });
-
       }
-
       return this.router.navigate(['/result'], { state: result });
     } catch (error) {
       return this.router.navigate(['/not-found']);
