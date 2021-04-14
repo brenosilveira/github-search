@@ -1,0 +1,35 @@
+.repo {
+  .repo-content {
+    margin-bottom: 30px;
+
+    .repo-title {
+      margin: 0;
+      font-size: 2.18rem;
+      font-weight: 300;
+      color: #ac53f2;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .repo-subtitle {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+
+    .ico-star-repo {
+      display: flex;
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
+
+      p {
+        margin-left: 7px;
+      }
+    }
+  }
+}

@@ -1,1 +1,33 @@
-<p>profile works!</p>
+<section class="info">
+  <div class="image-profile">
+    <img src="{{ state.avatar_url }}" alt="">
+  </div>
+
+  <div class="title-profile">
+    <h2>{{ state.name }}</h2>
+    <p>{{ state.bio }}</p>
+  </div>
+
+  <div class="icons-profile">
+    <div class="box-ico org">
+      <img src="assets/icons/organization icon.svg" alt="organization icon">
+      <p class="ico-text">{{ state.company }}</p>
+    </div>
+    <div class="box-ico location">
+      <img src="assets/icons/location icon.svg" alt="location icon">
+      <p class="ico-text">{{ state.location }}</p>
+    </div>
+    <div class="box-ico star">
+      <img src="assets/icons/star icon.svg" alt="star icon">
+      <p class="ico-text">{{ state.following }}</p>
+    </div>
+    <div class="box-ico repo">
+      <img src="assets/icons/repositorie icon.svg" alt="repo icon">
+      <p class="ico-text">{{ state.public_repos }}</p>
+    </div>
+    <div class="box-ico followers">
+      <img src="assets/icons/followers icon.svg" alt="followers icon">
+      <p class="ico-text">{{ state.followers }}</p>
+    </div>
+  </div>
+</section>

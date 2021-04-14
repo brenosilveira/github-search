@@ -1,1 +1,11 @@
-<p>result works!</p>
+<div class="container">
+  <header class="header-between">
+    <app-logo class="logo-pages"></app-logo>
+    <app-search-bar></app-search-bar>
+  </header>
+
+  <section>
+    <app-profile [state]="state"></app-profile>
+    <app-repositories [state]="state"></app-repositories>
+  </section>
+</div>

@@ -1,0 +1,55 @@
+.info {
+
+  .image-profile {
+
+    img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+
+  .title-profile {
+    margin-top: 12px;
+    margin-bottom: 33px;
+
+    h2 {
+      margin: 0;
+      font-size: 2.18rem;
+      font-weight: 300;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #5c5c5c;
+    }
+  }
+
+  .icons-profile {
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    .box-ico {
+      display: flex;
+      margin-bottom: 15px;
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+      }
+
+      p {
+        margin: 0;
+        color: #5c5c5c;
+      }
+    }
+  }
+}
