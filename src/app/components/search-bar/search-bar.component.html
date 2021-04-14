@@ -1,4 +1,4 @@
-<input type="text" class="input-search" #termSearch>
+<input type="text" class="input-search" #termSearch (keyup.enter)="search(termSearch.value)">
 
 <button (click)="search(termSearch.value)" class="button-search">
   <img src="assets/icons/search-ico.svg" alt="search icon">

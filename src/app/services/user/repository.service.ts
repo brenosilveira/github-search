@@ -8,8 +8,8 @@ export class RepositoryService {
 
   constructor(private http: HttpClient) { }
 
-  public getRepository(userName: string): Promise<Repository> {
-    return this.http.get<any>(`${environment.url_api}/users/${userName}/repos`)
+  public getRepository(userName: string): Promise<Repository[]> {
+    return this.http.get<Repository[]>(`${environment.url_api}/users/${userName}/repos`)
       .toPromise()
       .then((res) => {
         const resultOrdered = res.sort((a: any, b: any) => {

@@ -31,6 +31,6 @@ import { RepositoriesComponent } from './components/repositories/repositories.co
   ],
   exports: [],
   providers: [ SearchService ],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
