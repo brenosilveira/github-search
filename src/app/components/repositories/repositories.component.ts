@@ -1,32 +1,29 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { RepositoryService } from '../../services/user/repository.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Repository } from '../../shared/repository.model';
 
 @Component({
   selector: 'app-repositories',
   templateUrl: './repositories.component.html',
-  styleUrls: ['./repositories.component.scss'],
-  providers: [ RepositoryService ]
+  styleUrls: ['./repositories.component.scss']
 })
 export class RepositoriesComponent implements OnInit {
 
-  @Input() public state!: Repository
-  public repos: any
+  public repos?: Repository[]
 
-  constructor(private repositoryService: RepositoryService, private router: Router) { }
-
-  ngOnInit(): void {
-    this.getRepository(this.state?.login);
+  constructor(private repositoryService: RepositoryService, private router: Router, private route: ActivatedRoute) {
+    this.route.params.subscribe(() => {
+      this.refresh()
+    })
   }
 
-  async getRepository(termSearch: string): Promise<any> {
-    try {
-      let result = await this.repositoryService.getRepository(termSearch);
-      this.repos = result;
-    } catch {
-      return this.router.navigateByUrl('/not-found');
-    }
+  ngOnInit(): void {
+    this.refresh()
+  }
+
+  refresh() {
+    this.repos = this.route.snapshot.data.repositories
   }
 
 }
