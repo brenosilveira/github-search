@@ -6,11 +6,15 @@
       margin: 0;
       font-size: 2.18rem;
       font-weight: 300;
-      color: #ac53f2;
+      color: #9a2426;
 
       a {
         text-decoration: none;
         color: inherit;
+      }
+
+      &:hover {
+        color: #f10c10;
       }
     }
 
