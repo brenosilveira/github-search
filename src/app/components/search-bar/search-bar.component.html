@@ -1,5 +1,5 @@
-<input type="text" class="input-search" #termSearch (keyup.enter)="search(termSearch.value)">
+<input type="text" class="input-search" [formControl]="termSearch" (keyup.enter)="search()">
 
-<button (click)="search(termSearch.value)" class="button-search">
+<button (click)="search()" class="button-search">
   <img src="assets/icons/search-ico.svg" alt="search icon">
 </button>

@@ -12,6 +12,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SearchService } from './services/user/search.service';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
+import { RepositoryService } from './services/user/repository.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,15 +24,17 @@ import { RepositoriesComponent } from './components/repositories/repositories.co
     SearchBarComponent,
     LogoComponent,
     NotFoundComponent,
-    RepositoriesComponent,
+    RepositoriesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [],
-  providers: [ SearchService ],
+  providers: [ SearchService, RepositoryService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

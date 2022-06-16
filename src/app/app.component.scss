@@ -1,0 +1,21 @@
+.bg-container {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.377);
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #252525;
+  }
+}
