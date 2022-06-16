@@ -1,11 +1,15 @@
 <section class="repo">
   <div *ngFor="let repo of repos">
     <div class="repo-content">
-      <h2 class="repo-title"><a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a></h2>
+      <h2 class="repo-title">
+        <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
+      </h2>
       <p class="repo-subtitle">{{ repo.description }}</p>
       <div class="ico-star-repo">
-        <img src="assets/icons/star icon.svg" alt="star icon">
-        <p class="star-repo-count">{{ repo.stargazers_count }}</p>
+        <img src="assets/icons/star icon.svg" alt="star icon" />
+        <p class="star-repo-count">
+          {{ repo.stargazers_count }}
+        </p>
       </div>
     </div>
   </div>

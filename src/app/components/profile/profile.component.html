@@ -9,23 +9,23 @@
   </div>
 
   <div class="icons-profile">
-    <div class="box-ico org">
+    <div class="box-ico org" [ngStyle]="{'display': (state.company === null ? 'none' : '')}">
       <img src="assets/icons/organization icon.svg" alt="organization icon">
       <p class="ico-text">{{ state.company }}</p>
     </div>
-    <div class="box-ico location">
+    <div class="box-ico location" [ngStyle]="{'display': (state.location === null ? 'none' : '')}">
       <img src="assets/icons/location icon.svg" alt="location icon">
       <p class="ico-text">{{ state.location }}</p>
     </div>
-    <div class="box-ico star">
+    <div class="box-ico star" [ngStyle]="{'display': (state.following === null ? 'none' : '')}">
       <img src="assets/icons/followers icon.svg" alt="following icon">
       <p class="ico-text">{{ state.following }}</p>
     </div>
-    <div class="box-ico repo">
+    <div class="box-ico repo" [ngStyle]="{'display': (state.public_repos === null ? 'none' : '')}">
       <img src="assets/icons/repositorie icon.svg" alt="repo icon">
       <p class="ico-text">{{ state.public_repos }}</p>
     </div>
-    <div class="box-ico followers">
+    <div class="box-ico followers" [ngStyle]="{'display': (state.followers === null ? 'none' : '')}">
       <img src="assets/icons/followers icon.svg" alt="followers icon">
       <p class="ico-text">{{ state.followers }}</p>
     </div>
