@@ -1,6 +1,6 @@
 # 🔎 Github Search :octocat:
 
-![image](https://user-images.githubusercontent.com/47336657/114782666-352cb900-9d50-11eb-9e82-afaf3d90b89d.png)
+![image](https://user-images.githubusercontent.com/47336657/175104055-ff4f2c56-c639-41fb-badf-b499b265c885.png)
 
 
 
